@@ -4,7 +4,7 @@ const assert = require('assert');
 const groupBy = require('./groupBy');
 
 const groupedStrings = groupBy(['bed', 'cat', 'more', 'less'], 'length');
-assert.deepStrictEqual(groupedStrings, { '3': ['bed', 'cat'], ' 4': ['more', 'less'] });
+assert.deepStrictEqual(groupedStrings, { '3': ['bed', 'cat'], '4': ['more', 'less'] });
 
 const groupedNumbers = groupBy([6.1, 4.2, 6.3], Math.floor);
 assert.deepStrictEqual(groupedNumbers, { '4': [4.2], '6': [6.1, 6.3] });
