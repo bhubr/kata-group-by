@@ -1,6 +1,7 @@
 
 // groupBy.test.js
 const assert = require('assert');
+const groupBy = require('./groupBy');
 
 const groupedStrings = groupBy(['bed', 'cat', 'more', 'less'], 'length');
 assert.deepStrictEqual(groupedStrings, { '3': ['bed', 'cat'], ' 4': ['more', 'less'] });
